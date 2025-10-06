@@ -4,23 +4,23 @@ This repo implements a small Transformer trained on Tiny Shakespeare.
 
 ## Repository Structure
 
-- `main.py` — training entry point and configuration
-- `model.py` — Transformer components (Absolute PE, RoPE, masked attention, FFN/MoE)
-- `preprocessing.py` — tokenization (char, tiktoken) & batch creation
+- `main.py` — Training entry point and configuration
+- `model.py` — Transformer components (Absolute positional encoding, RoPE attention , Masked attention, Feed forward network and Mixture of experts (MoE) Model )
+- `preprocessing.py` — Tokenization (char, tiktoken) & batch creation
 - `data/` — Tiny Shakespeare dataset
-- `loss_plot/` — loss curves for experiments
+- `loss_plot/` — Loss curves for experiments
 
 ## How to Run
 
 1. Install dependencies:
-   \`\`\`bash
+   ```python
    pip install torch tiktoken matplotlib
-   \`\`\`
+   ```
 
 2. Train:
-   \`\`\`bash
+   ```python
    python main.py
-   \`\`\`
+   ```
 
 > Edit the config in \`main.py\` to switch tokenizers, positional encodings, attention, or MoE.
 
@@ -46,5 +46,5 @@ Config = {
 ```
 ## References
 
-- Karpathy — *Let's build GPT from scratch* (YouTube)  
+- Karpathy — *Let's build GPT from scratch* (YouTube >>>> https://www.youtube.com/watch?v=zduSFxRajkE )  
 - OpenAI \`tiktoken\`: https://github.com/openai/tiktoken
