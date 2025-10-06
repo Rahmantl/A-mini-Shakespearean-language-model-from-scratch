@@ -43,18 +43,8 @@ Config = {
     "log_interval": 20
 }
 
-@"
-## Experiments & Results
+```
+## References
 
-- **Tokenization:** char vs tiktoken  
-- **Positional Encoding:** with vs without Absolute PE; RoPE attention
-- **Feed-Forward:** Standard FFN vs Mixture of Experts (MoE)
-
-### Loss Curves
-![Tokenization comparison](loss_plot/tokenization.png)
-![Positional encoding](loss_plot/posenc.png)
-![FFN vs MoE](loss_plot/moe_vs_ffn.png)
-
-> Plots are generated during runs and saved under \`loss_plot/\`.  
-> For figures and detailed discussion, see **[Response.pdf](Response.pdf)**.
-"@ | Add-Content -Encoding UTF8 README.md
+- Karpathy — *Let's build GPT from scratch* (YouTube)  
+- OpenAI \`tiktoken\`: https://github.com/openai/tiktoken
